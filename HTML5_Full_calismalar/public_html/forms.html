@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <article> <!-- action  formun gideceği yeri belirler. -->
+            <form action="user.html"> <!-- form olduğu belirtilmeli yoksa form tagleri düzgün çalışmaz -->
+                <label>Usarname: </label><input name="usarname" type="Text"> <br/>  <!-- input tag ini kapatmaya gerek yok -->
+                <label>Passworld: </label> <input name="passworld" type="password" required> <br/>
+                <label>Cinsiyet: </label>
+                <select name="gender" >  <!-- gender cinsiyet anlamına gelir -->
+                    <option>Erkek</option>
+                    <option>Kadın</option>
+                </select> <br/>
+                <label>En sevdiğiniz araba? </label>
+                <select name="car" size="2" multiple>  <!-- gender cinsiyet anlamına gelir --> <!-- iki adet isim görünür -->
+                    <!-- ctrl tuşu kullanılarak birden fazla seçim yapılabilir. -->
+                    <option>Mercedes</option>
+                    <option>Peugeot</option>
+                    <option>BMW</option> 
+                    <option>Audi</option>
+                </select> <br/>
+                <label>Hakkınızda:</label>
+                <textarea name="biography" rows="4" cols="30"> 
+                        
+                </textarea> <br/><!-- 30 karakterden sonra alta geçer max 120 karakter girilir -->
+                <input type="submit" value="kaydet - submit - input ">   
+                <button onclick="alert('Kaydete Basıldı')">Kaydet button </button> <!-- genelde butonlar böyle kullanılmaz -->
+                <!-- butonlar genelde onClick attirubutesi ile javaScript kodu çağırmak için kullanılır. -->
+                <!-- boostrapte vb..  bu tarz kayıt işlemleri class lar ile yapılır button pek kullanılmaz. -->
+            </form>
+        </article>        
+        
+        <hr/>
+        <a href="index.html" > Ana Sayfaya Git </a>        
+    </body>
+</html>
